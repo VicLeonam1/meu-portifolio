@@ -393,7 +393,7 @@ div.text-and-image{
     flex-flow: row nowrap; 
     justify-content: space-between;
     align-items: center;
-    background: url("/images/website.png") no-repeat fixed center center / cover;
+    background: url("../images/website.jpg") no-repeat fixed center center / cover;
 }
 
 .EntreEmContato{
