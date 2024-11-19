@@ -177,7 +177,7 @@ section#sobre{
     flex-flow: row nowrap;
     justify-content: space-between;
     align-items: center;
-    background: url("/images/codando.jpg") no-repeat fixed center center / cover;
+    background: url("../images/codando.png") no-repeat fixed center center / cover;
     color: white;
 }
 
