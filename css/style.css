@@ -330,7 +330,7 @@ div.text-and-image{
     padding: 20px;
     user-select: none;
     height: 550px;
-    box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.418);
+    border: 1px solid black;
     border-radius: 20px;
 }
 
@@ -371,8 +371,7 @@ div.text-and-image{
 .slider-wrapper {
     overflow: hidden;
     max-width: 2000px;
-    margin: auto;
-    padding: 40px;
+    margin: 0 60px 35px;
 }
 
 .slider-wrapper .swiper-pagination-bullet{
