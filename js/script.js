@@ -1,25 +1,3 @@
-let currentIndex = 0;
-const cards = document.querySelectorAll(".card");
-const totalCards = cards.length;
-
-document.querySelector(".next").addEventListener("click", () => {
-    currentIndex = (currentIndex + 1) % totalCards;
-    updateCarousel();
-});
-
-document.querySelector(".prev").addEventListener("click", () => {
-    currentIndex = (currentIndex - 1 + totalCards) % totalCards;
-    updateCarousel();
-});
-
-function updateCarousel() {
-    cards.forEach((card, index) => {
-        card.style.transform = `translateX(${(index - currentIndex) * 100}%)`;
-    });
-}
-
-updateCarousel();
-
 
 document.getElementById("scrollToTop").addEventListener("click", function (event) {
     event.preventDefault(); 
@@ -29,3 +7,34 @@ document.getElementById("scrollToTop").addEventListener("click", function (event
     });
 });
 
+const elements = document.querySelectorAll('.hidden')
+
+const myObserver = new IntersectionObserver( (entries) => {
+    entries.forEach( (entry) => {
+        if(entry.isIntersecting){
+            entry.target.classList.add('show')
+        }else{
+            entry.target.classList.remove('show')
+        }
+    })
+} )
+
+
+elements.forEach( (element) => myObserver.observe(element) )
+
+const linha = document.querySelector('.linha')
+let lista = document.querySelector('.lista')
+
+function menuHeader(){
+    if(lista.style.display === 'none'){
+        lista.style.display = 'none'
+    }else{
+        lista.style.display = 'block'
+    }
+
+    if(lista.style.display === 'block'){
+        lista.style.display = 'none'
+    }else{
+        lista.style.display = 'block'
+    }
+}

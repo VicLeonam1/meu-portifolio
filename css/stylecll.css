@@ -1,0 +1,55 @@
+@media screen and (max-width: 768px) {
+    header .interface {
+        display: flex;
+        flex-flow: column nowrap;
+        justify-content: space-between;
+        align-items: center;
+      }
+
+      header .interface #navegacao .lista{
+        display: none;
+        transition: .5s;
+      }
+    
+      header .interface #navegacao .lista .lista-item {
+        display: flex;
+        flex-flow: column nowrap;
+        justify-content: center;
+        align-items: center;
+        font-size: 20px;
+        padding: 10px 14px;
+        transition: 0.3s;
+        cursor: pointer;
+        
+    }
+
+      .exit {
+        display: flex;
+        width: 30px;
+        height: 40px;
+        cursor: pointer;
+        flex-direction: column;
+        margin: 10px;
+        justify-content: center;
+      }
+      
+      .exit div.linha {
+        height: 2px;
+        margin: 3px 0;
+        background-color: #191a27;
+        border-radius: 2px;
+        transition: 0.3s;
+      }
+      /*
+      .exit div:nth-child(1) {
+        transform: rotate(45deg) translate(2.2px, 1.5px);
+      }
+      
+      .exit div:nth-child(2) {
+        opacity: 0;
+      }
+      
+      .exit div:nth-child(3) {
+        transform: rotate(-45deg) translate(10px, -9.5px);
+      }*/
+}
