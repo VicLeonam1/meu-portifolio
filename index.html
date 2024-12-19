@@ -36,23 +36,25 @@
 
     <title>Victor Leonam</title>
   </head>
-  <body>
+  <body onresize="mudouTamanho()">
     <!-- Cabeçalho com logo e navegação -->
     <header id="header">
       <div class="interface">
         <img src="images/V.png" alt="logo-v" id="logoV" />
+
         <div class="exit" onclick="menuHeader()">
           <div class="linha"></div>
           <div class="linha"></div>
           <div class="linha"></div>
         </div>
+
         <nav id="navegacao" class="letras">
           <ul class="lista">
-            <li class="lista-item"><a href="#" id="scrollToTop">Home</a></li>
+            <li class="lista-item"><a href="#" id="scrollToTop" class="seção" onclick="fecharSecao()">Home</a></li>
 
-            <li class="lista-item"><a href="#sobre">Sobre</a></li>
-            <li class="lista-item"><a href="#competencias">Competências</a></li>
-            <li class="lista-item"><a href="#projetos">Projetos</a></li>
+            <li class="lista-item"><a href="#sobre" class="seção" onclick="fecharSecao()">Sobre</a></li>
+            <li class="lista-item"><a href="#competencias" class="seção" onclick="fecharSecao()">Competências</a></li>
+            <li class="lista-item"><a href="#projetos" class="seção" onclick="fecharSecao()">Projetos</a></li>
           </ul>
         </nav>
       </div>
@@ -63,9 +65,15 @@
     <main>
       <!-- Seção Home -->
       <section id="home" class="hidden">
+        <!-- Imagem de programador -->
+        <img
+          src="images/progamador.png"
+          alt="Programador trabalhando"
+          class="letras"
+        />
         <div id="textos">
           <h1 class="letras">
-            Oi, Eu sou <span id="nome">Victor Leonam...</span>
+            Oi, Eu sou <span id="nome">Victor Leonam</span>
           </h1>
           <h3 class="letras">Desenvolvedor Web Front-end.</h3>
           <p class="letras">
@@ -84,12 +92,6 @@
             >
           </div>
         </div>
-        <!-- Imagem de programador -->
-        <img
-          src="images/progamador.png"
-          alt="Programador trabalhando"
-          class="letras"
-        />
       </section>
       <!-- Fim da Seção Home -->
 

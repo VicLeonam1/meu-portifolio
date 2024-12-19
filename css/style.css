@@ -203,8 +203,7 @@ section#sobre {
 }
 
 section#sobre .sobre-mim {
-  width: 596px;
-  text-align: justify;
+  text-align: center;
 }
 
 #sobre .sobre-mim p {
@@ -242,7 +241,7 @@ div.text-and-image {
 /*MAIN - COMPETÊNCIAS*/
 
 #competencias {
-  width: 100%;
+  width: 100vw;
   padding: 50px;
   margin-bottom: 200px;
 }
